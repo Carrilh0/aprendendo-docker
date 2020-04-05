@@ -4,7 +4,7 @@
 
 ```docker run -ti --name <nome-do-container> <imagem> /bin/bash```
 
-##### Executar/instanciar um contêiner (básico):
+### Executar/instanciar um contêiner (básico):
 
 * ```-ti```: Permite assumir o bash do contêiner logo após instanciá-lo
     * ```-t``` : é para que você tenha uma terminal

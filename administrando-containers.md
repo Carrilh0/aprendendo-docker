@@ -84,3 +84,9 @@
     * ```-f```: Força a exculsão do container caso ele esteja em execução
 
 ---
+
+```docker tag <image-id> <name>```
+
+* Altera o nome da imagem
+
+---

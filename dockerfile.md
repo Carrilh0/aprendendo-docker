@@ -68,5 +68,12 @@
 
 * Define o criado da imagem
 
+## Build
 
+### Para realizar o build de um dockerfiler é necessario rodar o seguinte comando:
 
+```docker build -t nome:1.0 .```
+
+* ```-t <nome da imagem:versão>``` Define o nome e versão da respectiva imagem gerada pelo dockerfile
+
+* ```.``` É o diretorio em que o dockerfile está

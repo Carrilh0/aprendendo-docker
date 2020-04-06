@@ -11,7 +11,7 @@
 ---
 ```RUN apt-get update && apt-get install apache2 && apt-get clean```
 
-* Serve para instalar pacotes. O quanto menos RUN tiver é melhor, pois é menos camada, a cada RUN executado é uma nova camada.
+* Serve para instalar pacotes, é executao durante o BUILD da imagem. O quanto menos RUN tiver é melhor, pois é menos camada, a cada RUN executado é uma nova camada.
 ---
 
 ```ADD opa.txt /diretorio/```
@@ -21,7 +21,7 @@
 
 ```CMD ["sh", "-c", "echo", "$HOME"```
 
-* CMD é um parametro para o entrypoint
+* CMD é um parametro para o entrypoint, é executado quando o container é iniciado
 ---
 
 ```LABEL Description="bla bla bla"```

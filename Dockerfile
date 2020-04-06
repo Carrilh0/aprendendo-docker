@@ -1,3 +1,3 @@
 FROM debian
  
-RUN /bin/echo "HELLO DOCKER!!"
+RUN apt-get update && apt-get install apache2 -y

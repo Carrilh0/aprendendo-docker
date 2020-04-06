@@ -21,7 +21,7 @@
 
 ```CMD ["sh", "-c", "echo", "$HOME"```
 
-* CMD é um parametro para o entrypoint, é executado quando o container é iniciado
+* Define um comando a ser executado quando um container baseado nessa imagem for iniciado, esse parâmetro pode ser sobrescrito caso o container seja iniciado utilizando alguma informação de comando, como: docker run -d imagem comando, neste caso o CMD da imagem será sobrescrito pelo comando informado;
 ---
 
 ```LABEL Description="bla bla bla"```
@@ -36,7 +36,7 @@
 
 ```ENTRYPOINT ["/usr/bin/apache2ctl", "-D", "FOREGROUND"]```
 
-* Define qual é o processo principal para o container, caso ele morra, o container morre junto
+* nforma qual comando será executado quando um container for iniciado utilizando esta imagem, diferentemente do CMD, o ENTRYPOINT não é sobrescrito, isso quer dizer que este comando será sempre executado.
 ---
 
 ```EBV meunome="Vitor Carrilho"```
@@ -71,6 +71,11 @@
 ## Build
 
 ### Para realizar o build de um dockerfiler é necessario rodar o seguinte comando:
+
+```OBBUILD <comando>```
+
+* Define algumas instruções que podem ser realizadas quando alguma determinada ação for executada, é basicamente como uma trigger.
+---
 
 ```docker build -t nome:1.0 .```
 

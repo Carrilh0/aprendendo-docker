@@ -72,7 +72,7 @@
 
 ### Para realizar o build de um dockerfiler é necessario rodar o seguinte comando:
 
-```OBBUILD <comando>```
+```ONBUILD <comando>```
 
 * Define algumas instruções que podem ser realizadas quando alguma determinada ação for executada, é basicamente como uma trigger.
 ---

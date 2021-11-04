@@ -2,7 +2,7 @@
 
 ## Comandos:
 
-```docker run -ti --name <nome-do-container> <imagem> /bin/bash```
+```docker container run -ti --name <nome-do-container> <imagem> /bin/bash```
 
 ### Executar/instanciar um contêiner (básico):
 
@@ -20,25 +20,25 @@
 * Listas todas as imagens baixadas no docker
 ---
 
-```docker stop  <container-id/name>```
+```docker container stop  <container-id/name>```
 
 * Para um container
 
 ---
 
-```docker start  <container-id/name>```
+```docker container start  <container-id/name>```
 
 * Inicia um container
 
 ---
 
-```docker pause  <container-id/name>```
+```docker container pause  <container-id/name>```
 
 * Pausa um container
 
 ---
 
-```docker unpause  <container-id/name>```
+```docker container unpause  <container-id/name>```
 
 * Despausa um container
 
@@ -60,7 +60,7 @@
 
 ---
 
-```docker stats  <container-id/name>```
+```docker container stats  <container-id/name>```
 
 * Visualiza o quanto o container está ultilizando de recurso
 
@@ -72,7 +72,7 @@
 
 ---
 
-```docker logs  <container-id/name>```
+```docker container logs  <container-id/name>```
 
 * Retorna os logs do container
 
